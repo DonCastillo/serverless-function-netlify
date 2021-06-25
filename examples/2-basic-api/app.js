@@ -18,7 +18,6 @@ const fetchData = async () => {
                 </article>
             `;
         }).join('')
-        // console.log(products);
         result.innerHTML = products;
     } catch (error) {
         result.innerHTML = `<h4>There was an error. Please try again later.</h4>`;
