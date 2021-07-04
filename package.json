@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "airtable-node": "^0.1.20",
-    "nodemailer": "^6.4.17",
+    "nodemailer": "^6.6.2",
     "stripe": "^8.131.1"
   },
   "devDependencies": {
