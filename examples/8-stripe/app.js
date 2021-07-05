@@ -2,15 +2,15 @@ const purchase = [
   { id: '1', name: 't-shirt', price: 1999 },
   { id: '2', name: 'shoes', price: 4999 },
 ]
-const total_amount = 6998
+const total_amount = 10998
 const shipping_fee = 1099
-var stripe = Stripe('YOUR_PUBLIC_KEY')
+var stripe = Stripe('pk_test_51J9TVQHreGYJxPp4D42zK9Qlz619EbCxIobg2judDN54mX11jVSjOyoHesK8B1UWnFzXr1XxsGokIplPEir473Kr003Gjj1EcT');
 
 // The items the customer wants to buy
 
 // Disable the button until we have Stripe set up on the page
 document.querySelector('button').disabled = true
-fetch('/api/8-stripe', {
+fetch('/api/stripe', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
